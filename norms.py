@@ -39,7 +39,7 @@ print """
 
     <body>
 
-        <h1>Quadrats (Anglo-American)</h1>
+        <h1>Quadrats (CSS points)</h1>
 
         <table>
 
