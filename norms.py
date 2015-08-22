@@ -8,23 +8,51 @@ print """
 <html>
     <head>
         <meta charset="utf-8"/>
+        <title>Typographic norms</title>
         <style type="text/css">
+
+            @font-face {
+                font-family: 'humanst521_btroman';
+                src: url('fonts/humanist_521_bt-webfont.eot');
+                src: url('fonts/humanist_521_bt-webfont.eot?#iefix') format('embedded-opentype'),
+                     url('fonts/humanist_521_bt-webfont.woff2') format('woff2'),
+                     url('fonts/humanist_521_bt-webfont.woff') format('woff'),
+                     url('fonts/humanist_521_bt-webfont.ttf') format('truetype'),
+                     url('fonts/humanist_521_bt-webfont.svg#humanst521_btroman') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'humanst521_btbold';
+                src: url('fonts/humanist_521_bold_bt-webfont.eot');
+                src: url('fonts/humanist_521_bold_bt-webfont.eot?#iefix') format('embedded-opentype'),
+                     url('fonts/humanist_521_bold_bt-webfont.woff2') format('woff2'),
+                     url('fonts/humanist_521_bold_bt-webfont.woff') format('woff'),
+                     url('fonts/humanist_521_bold_bt-webfont.ttf') format('truetype'),
+                     url('fonts/humanist_521_bold_bt-webfont.svg#humanst521_btbold') format('svg');
+                font-weight: 700;
+                font-style: normal;
+            }
+
             body {
-                font-size: 1.5em;
-                padding: 1.5em;"""
+                font-size: 1.4em;
+                padding: 1em .75em 1em .75em;
+"""
 
 if MODE == "text":
-    print 'font-family: "Gill Sans", "Gill Sans MT", sans-serif;'
+    print 'font-family: humanst521_btroman, sans-serif;'
 else:
     print 'font-faily: "Times New Roman", Times, Georgia, serif;'
 print """
             }
 
             h1 {
-                font-family: "Gill Sans", "Gill Sans MT", sans-serif;
-                font-weight: 700;
-                font-size: .9em;
+                font-family: humanst521_btbold, sans-serif;
+                font-size: 1em;
                 margin-bottom: 3em;
+                margin-top: 0;
+                padding-top: 0;
             }
 
             td {
