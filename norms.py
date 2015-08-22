@@ -16,8 +16,7 @@ print """
 if MODE == "text":
     print 'font-family: "Gill Sans", "Gill Sans MT", sans-serif;'
 else:
-    print "font-family: Times New Roman;"
-
+    print 'font-faily: "Times New Roman", Times, Georgia, serif;'
 print """
             }
 
@@ -30,10 +29,11 @@ print """
 
             td {
                 padding-right: .5em;
-                padding-bottom: .5em;
+                padding-bottom: 10px;
                 width: 1px;
                 white-space: nowrap;
             }
+
         </style>
     </head>
 
