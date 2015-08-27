@@ -1,2 +1,2 @@
 # froshaug-norms
-Let's try to generate Froshaug's _Typographic norms_ using the computer
+Anthony Froshaug's _Typographic norms_ [in the browser](http://i-s-o-g-r-a-m.github.io/froshaug-norms/).
