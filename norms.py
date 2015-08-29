@@ -67,8 +67,17 @@ print """
             }
 
             td.pt-size {
+                text-align: right;
                 font-family: humanst521_btbold;
                 padding-right: 3em;
+            }
+
+            .red-quads {
+                background-color: #FF4200;
+            }
+
+            .black-quads {
+                background-color: #000000;
             }
 
         </style>
@@ -95,13 +104,12 @@ all_point_sizes = (
     40, 42, 48, 54, 56, 60, 72, 84, 90, 96, 108, 120, 126, 144, 168
 )
 
-row_point_sizes = (5, 6, 7, 8, 9, 10, 12, 14, 18, 24, 30, 36, 42)
-
-offset = row_point_sizes[0]
+body_sizes = (5, 6, 7, 8, 9, 10, 12, 14, 18, 24, 30, 36, 42, 48, 60, 72)
+max_body_size_to_display = 42
+offset = body_sizes[0]
 
 rows = []
-
-for ptsize in row_point_sizes:
+for ptsize in [x for x in body_sizes if x <= max_body_size_to_display]:
     row = []
     for cell in [i for i in range(offset, 169) if i in all_point_sizes]:
         if len([i for i in row if i is not None]) == 4:
@@ -118,7 +126,7 @@ for row_idx, row in enumerate(rows):
     print "<tr>"
 
     if MODE == "text":
-        print "<td class='pt-size'>{}</td>".format(row_point_sizes[row_idx])
+        print "<td class='pt-size'>{}</td>".format(body_sizes[row_idx])
 
     found = 0
     for td_idx, td in enumerate(row):
@@ -127,14 +135,19 @@ for row_idx, row in enumerate(rows):
             print td if td else " "
             print "</td>"
         else:
-            print '<td style="font-size: ' + str(row_point_sizes[row_idx]) + 'pt;">'
+            print '<td style="font-size: ' + str(body_sizes[row_idx]) + 'pt;">'
             if td:
                 found += 1
                 cell_pt_size = all_point_sizes[td_idx]
-                if False:  # TODO: the most important part
-                    print "<span style='background-color: red;'>"
+                multiple_size_use = (
+                    cell_pt_size != body_sizes[row_idx] and
+                    cell_pt_size in body_sizes
+                )
+
+                if multiple_size_use:
+                    print "<span class='red-quads'>"
                 else:
-                    print "<span style='background-color: black;'>"
+                    print "<span class='black-quads'>"
                 for k in range(1, found + 1):
                     print "&#x2001;"
                 print "</span>"
