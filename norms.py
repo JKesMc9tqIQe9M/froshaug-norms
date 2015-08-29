@@ -55,6 +55,10 @@ print """
                 padding-top: 0;
             }
 
+            h1.text-mode {
+                padding-left: 4.25em;
+            }
+
             td {
                 padding-right: .5em;
                 padding-bottom: 10px;
@@ -62,12 +66,24 @@ print """
                 white-space: nowrap;
             }
 
+            td.pt-size {
+                font-family: humanst521_btbold;
+                padding-right: 3em;
+            }
+
         </style>
     </head>
 
     <body>
 
-        <h1>Quadrats (CSS points)</h1>
+        <h1
+"""
+
+if MODE == "text":
+    print " class='text-mode' "
+
+print """
+>Quadrats (CSS points)</h1>
 
         <table>
 
@@ -98,6 +114,10 @@ for ptsize in x_point_sizes:
 
 for row_idx, row in enumerate(rows):
     print "<tr>"
+
+    if MODE == "text":
+        print "<td class='pt-size'>{}</td>".format(x_point_sizes[row_idx])
+
     found = 0
     for td_idx, td in enumerate(row):
         if MODE == "text":
