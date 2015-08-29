@@ -90,18 +90,20 @@ print """
 """
 
 
-x_point_sizes = (5, 6, 7, 8, 9, 10, 12, 14, 18, 24, 30, 36, 42)
-y_point_sizes = (
+all_point_sizes = (
     5, 6, 7, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 24, 27, 28, 30, 32, 36,
     40, 42, 48, 54, 56, 60, 72, 84, 90, 96, 108, 120, 126, 144, 168
 )
-offset = x_point_sizes[0]
+
+row_point_sizes = (5, 6, 7, 8, 9, 10, 12, 14, 18, 24, 30, 36, 42)
+
+offset = row_point_sizes[0]
 
 rows = []
 
-for ptsize in x_point_sizes:
+for ptsize in row_point_sizes:
     row = []
-    for cell in [i for i in range(offset, 169) if i in y_point_sizes]:
+    for cell in [i for i in range(offset, 169) if i in all_point_sizes]:
         if len([i for i in row if i is not None]) == 4:
             row.append(None)
             continue
@@ -116,7 +118,7 @@ for row_idx, row in enumerate(rows):
     print "<tr>"
 
     if MODE == "text":
-        print "<td class='pt-size'>{}</td>".format(x_point_sizes[row_idx])
+        print "<td class='pt-size'>{}</td>".format(row_point_sizes[row_idx])
 
     found = 0
     for td_idx, td in enumerate(row):
@@ -125,10 +127,10 @@ for row_idx, row in enumerate(rows):
             print td if td else " "
             print "</td>"
         else:
-            print '<td style="font-size: ' + str(x_point_sizes[row_idx]) + 'pt;">'
+            print '<td style="font-size: ' + str(row_point_sizes[row_idx]) + 'pt;">'
             if td:
                 found += 1
-                cell_pt_size = y_point_sizes[td_idx]
+                cell_pt_size = all_point_sizes[td_idx]
                 if False:  # TODO: the most important part
                     print "<span style='background-color: red;'>"
                 else:
