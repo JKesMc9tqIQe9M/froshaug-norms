@@ -12,6 +12,9 @@ def make_norms():
         <head>
             <meta charset="utf-8"/>
             <title>Typographic norms</title>
+
+            <link rel="stylesheet" href="css/animate.min.css">
+
             <style type="text/css">
 
                 @font-face {
@@ -131,7 +134,7 @@ def make_norms():
         rows.append(row)
 
     for row_idx, row in enumerate(rows):
-        print("<tr>")
+        print("<tr class='unpopulated'>")
         if MODE == "text":
             print("<td class='pt-size'>{}</td>".format(STANDARD_SIZES[row_idx]))
         for td_idx, td in enumerate(row):
@@ -148,13 +151,16 @@ def make_norms():
                         cell_pt_size in STANDARD_SIZES
                     )
                     quad_class = 'red-quad' if multiple_size_use else 'black-quad'
-                    print("<div class='{}' style='width: {}pt; height: {}pt;'/>".format(
+                    print("<div class='quad {}' style='display: none; width: {}pt; height: {}pt;'/>".format(
                         quad_class, cell_pt_size, str(STANDARD_SIZES[row_idx]))
                     )
                 print("</td>")
         print("</tr>")
 
-    print("</table></body></html>")
+    print("</table>")
+    print('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>')
+    print('<script src="js/norms.js"></script>')
+    print("</body></html>")
 
 
 if '__main__' == __name__:
