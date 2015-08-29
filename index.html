@@ -1,71 +1,94 @@
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Typographic norms</title>
-        <style type="text/css">
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+            <title>Typographic norms</title>
+            <style type="text/css">
 
-            @font-face {
-                font-family: 'humanst521_btroman';
-                src: url('fonts/humanist_521_bt-webfont.eot');
-                src: url('fonts/humanist_521_bt-webfont.eot?#iefix') format('embedded-opentype'),
-                     url('fonts/humanist_521_bt-webfont.woff2') format('woff2'),
-                     url('fonts/humanist_521_bt-webfont.woff') format('woff'),
-                     url('fonts/humanist_521_bt-webfont.ttf') format('truetype'),
-                     url('fonts/humanist_521_bt-webfont.svg#humanst521_btroman') format('svg');
-                font-weight: normal;
-                font-style: normal;
-            }
+                @font-face {
+                    font-family: 'humanst521_btroman';
+                    src: url('fonts/humanist_521_bt-webfont.eot');
+                    src: url('fonts/humanist_521_bt-webfont.eot?#iefix') format('embedded-opentype'),
+                         url('fonts/humanist_521_bt-webfont.woff2') format('woff2'),
+                         url('fonts/humanist_521_bt-webfont.woff') format('woff'),
+                         url('fonts/humanist_521_bt-webfont.ttf') format('truetype'),
+                         url('fonts/humanist_521_bt-webfont.svg#humanst521_btroman') format('svg');
+                    font-weight: normal;
+                    font-style: normal;
+                }
 
-            @font-face {
-                font-family: 'humanst521_btbold';
-                src: url('fonts/humanist_521_bold_bt-webfont.eot');
-                src: url('fonts/humanist_521_bold_bt-webfont.eot?#iefix') format('embedded-opentype'),
-                     url('fonts/humanist_521_bold_bt-webfont.woff2') format('woff2'),
-                     url('fonts/humanist_521_bold_bt-webfont.woff') format('woff'),
-                     url('fonts/humanist_521_bold_bt-webfont.ttf') format('truetype'),
-                     url('fonts/humanist_521_bold_bt-webfont.svg#humanst521_btbold') format('svg');
-                font-weight: 700;
-                font-style: normal;
-            }
+                @font-face {
+                    font-family: 'humanst521_btbold';
+                    src: url('fonts/humanist_521_bold_bt-webfont.eot');
+                    src: url('fonts/humanist_521_bold_bt-webfont.eot?#iefix') format('embedded-opentype'),
+                         url('fonts/humanist_521_bold_bt-webfont.woff2') format('woff2'),
+                         url('fonts/humanist_521_bold_bt-webfont.woff') format('woff'),
+                         url('fonts/humanist_521_bold_bt-webfont.ttf') format('truetype'),
+                         url('fonts/humanist_521_bold_bt-webfont.svg#humanst521_btbold') format('svg');
+                    font-weight: 700;
+                    font-style: normal;
+                }
 
-            body {
-                font-size: 1.4em;
-                padding: 1em .75em 1em .75em;
+                body {
+                    font-size: 1.3em;
+                    padding: 1em .75em 1em .75em;
+    
+font-family: "Times New Roman", Times, Georgia, serif;
 
-font-family: humanst521_btroman, sans-serif;
+                }
 
-            }
+                h1 {
+                    font-family: humanst521_btbold, sans-serif;
+                    font-size: 1em;
+                    margin-bottom: 3em;
+                    margin-top: 0;
+                    padding-top: 0;
+                }
 
-            h1 {
-                font-family: humanst521_btbold, sans-serif;
-                font-size: 1em;
-                margin-bottom: 3em;
-                margin-top: 0;
-                padding-top: 0;
-            }
+                h1.text-mode {
+                    padding-left: 4.25em;
+                }
 
-            td {
-                padding-right: .5em;
-                padding-bottom: 10px;
-                width: 1px;
-                white-space: nowrap;
-            }
+                td {
+                    padding-right: .5em;
+    
+ padding-bottom: .7em;
 
-        </style>
-    </head>
+                    width: 1px;
+                    white-space: nowrap;
+                }
 
-    <body>
+                td.pt-size {
+                    text-align: right;
+                    font-family: humanst521_btbold;
+                    padding-right: 3em;
+                }
 
-        <h1>Quadrats (CSS points)</h1>
+                .red-quad {
+                    background-color: #FF4200;
+                }
 
-        <table>
+                .black-quad {
+                    background-color: #000000;
+                }
 
+            </style>
+        </head>
 
+        <body>
+
+            <h1
+    
+
+    >Quadrats (CSS points)</h1>
+
+            <table>
+
+    
 <tr>
 <td>
-5
+<div class='black-quad' style='width: 5pt; height: 5pt;'/>
 </td>
 <td>
  
@@ -80,7 +103,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-10
+<div class='red-quad' style='width: 10pt; height: 5pt;'/>
 </td>
 <td>
  
@@ -89,7 +112,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-15
+<div class='black-quad' style='width: 15pt; height: 5pt;'/>
 </td>
 <td>
  
@@ -98,7 +121,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-20
+<div class='black-quad' style='width: 20pt; height: 5pt;'/>
 </td>
 <td>
  
@@ -172,7 +195,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-6
+<div class='black-quad' style='width: 6pt; height: 6pt;'/>
 </td>
 <td>
  
@@ -187,7 +210,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-12
+<div class='red-quad' style='width: 12pt; height: 6pt;'/>
 </td>
 <td>
  
@@ -199,7 +222,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-18
+<div class='red-quad' style='width: 18pt; height: 6pt;'/>
 </td>
 <td>
  
@@ -208,7 +231,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-24
+<div class='red-quad' style='width: 24pt; height: 6pt;'/>
 </td>
 <td>
  
@@ -279,7 +302,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-7
+<div class='black-quad' style='width: 7pt; height: 7pt;'/>
 </td>
 <td>
  
@@ -294,7 +317,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-14
+<div class='red-quad' style='width: 14pt; height: 7pt;'/>
 </td>
 <td>
  
@@ -309,7 +332,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-21
+<div class='black-quad' style='width: 21pt; height: 7pt;'/>
 </td>
 <td>
  
@@ -318,117 +341,13 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-28
+<div class='black-quad' style='width: 28pt; height: 7pt;'/>
 </td>
 <td>
  
 </td>
 <td>
  
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-8
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-16
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-24
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-32
 </td>
 <td>
  
@@ -490,10 +409,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
- 
-</td>
-<td>
-9
+<div class='black-quad' style='width: 8pt; height: 8pt;'/>
 </td>
 <td>
  
@@ -511,7 +427,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-18
+<div class='black-quad' style='width: 16pt; height: 8pt;'/>
 </td>
 <td>
  
@@ -523,7 +439,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-27
+<div class='red-quad' style='width: 24pt; height: 8pt;'/>
 </td>
 <td>
  
@@ -535,7 +451,114 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-36
+<div class='black-quad' style='width: 32pt; height: 8pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+</tr>
+<tr>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 9pt; height: 9pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='red-quad' style='width: 18pt; height: 9pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 27pt; height: 9pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='red-quad' style='width: 36pt; height: 9pt;'/>
 </td>
 <td>
  
@@ -600,7 +623,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-10
+<div class='black-quad' style='width: 10pt; height: 10pt;'/>
 </td>
 <td>
  
@@ -618,7 +641,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-20
+<div class='black-quad' style='width: 20pt; height: 10pt;'/>
 </td>
 <td>
  
@@ -633,7 +656,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-30
+<div class='red-quad' style='width: 30pt; height: 10pt;'/>
 </td>
 <td>
  
@@ -642,117 +665,13 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-40
+<div class='black-quad' style='width: 40pt; height: 10pt;'/>
 </td>
 <td>
  
 </td>
 <td>
  
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-12
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-24
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-36
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-48
 </td>
 <td>
  
@@ -811,10 +730,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
- 
-</td>
-<td>
-14
+<div class='black-quad' style='width: 12pt; height: 12pt;'/>
 </td>
 <td>
  
@@ -835,10 +751,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
- 
-</td>
-<td>
-28
+<div class='red-quad' style='width: 24pt; height: 12pt;'/>
 </td>
 <td>
  
@@ -853,7 +766,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-42
+<div class='red-quad' style='width: 36pt; height: 12pt;'/>
 </td>
 <td>
  
@@ -862,7 +775,117 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-56
+<div class='red-quad' style='width: 48pt; height: 12pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+</tr>
+<tr>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 14pt; height: 14pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 28pt; height: 14pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='red-quad' style='width: 42pt; height: 14pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 56pt; height: 14pt;'/>
 </td>
 <td>
  
@@ -927,7 +950,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-18
+<div class='black-quad' style='width: 18pt; height: 18pt;'/>
 </td>
 <td>
  
@@ -951,7 +974,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-36
+<div class='red-quad' style='width: 36pt; height: 18pt;'/>
 </td>
 <td>
  
@@ -963,7 +986,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-54
+<div class='black-quad' style='width: 54pt; height: 18pt;'/>
 </td>
 <td>
  
@@ -972,7 +995,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-72
+<div class='red-quad' style='width: 72pt; height: 18pt;'/>
 </td>
 <td>
  
@@ -1040,7 +1063,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-24
+<div class='black-quad' style='width: 24pt; height: 24pt;'/>
 </td>
 <td>
  
@@ -1064,7 +1087,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-48
+<div class='red-quad' style='width: 48pt; height: 24pt;'/>
 </td>
 <td>
  
@@ -1076,7 +1099,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-72
+<div class='red-quad' style='width: 72pt; height: 24pt;'/>
 </td>
 <td>
  
@@ -1085,117 +1108,13 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-96
+<div class='black-quad' style='width: 96pt; height: 24pt;'/>
 </td>
 <td>
  
 </td>
 <td>
  
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-30
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-60
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-90
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-120
 </td>
 <td>
  
@@ -1257,13 +1176,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-36
+<div class='black-quad' style='width: 30pt; height: 30pt;'/>
 </td>
 <td>
  
@@ -1284,7 +1197,48 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-72
+ 
+</td>
+<td>
+<div class='red-quad' style='width: 60pt; height: 30pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 90pt; height: 30pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 120pt; height: 30pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+</tr>
+<tr>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
 </td>
 <td>
  
@@ -1296,7 +1250,10 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-108
+ 
+</td>
+<td>
+ 
 </td>
 <td>
  
@@ -1305,7 +1262,73 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-144
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 36pt; height: 36pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='red-quad' style='width: 72pt; height: 36pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 108pt; height: 36pt;'/>
+</td>
+<td>
+ 
+</td>
+<td>
+ 
+</td>
+<td>
+<div class='black-quad' style='width: 144pt; height: 36pt;'/>
 </td>
 <td>
  
@@ -1373,7 +1396,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-42
+<div class='black-quad' style='width: 42pt; height: 42pt;'/>
 </td>
 <td>
  
@@ -1391,7 +1414,7 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-84
+<div class='black-quad' style='width: 84pt; height: 42pt;'/>
 </td>
 <td>
  
@@ -1406,13 +1429,13 @@ font-family: humanst521_btroman, sans-serif;
  
 </td>
 <td>
-126
+<div class='black-quad' style='width: 126pt; height: 42pt;'/>
 </td>
 <td>
  
 </td>
 <td>
-168
+<div class='black-quad' style='width: 168pt; height: 42pt;'/>
 </td>
 </tr>
 </table></body></html>
