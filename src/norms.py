@@ -122,7 +122,7 @@ def make_norms():
     rows = []
     for ptsize in [x for x in STANDARD_SIZES if x <= MAX_STANDARD_SIZE_TO_DISPLAY]:
         row = []
-        for cell in [i for i in range(STANDARD_SIZES[0], 169) if i in ALL_PT_SIZES]:
+        for cell in [i for i in range(STANDARD_SIZES[0], ALL_PT_SIZES[-1] + 1) if i in ALL_PT_SIZES]:
             if len([i for i in row if i is not None]) == 4:
                 row.append(None)
                 continue
