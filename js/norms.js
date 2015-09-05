@@ -14,7 +14,7 @@ $(function() {
             .removeClass("unpopulated")
             .find(".quad")
             .show()
-            .addClass("animated rotateInDownLeft");
+            .addClass("animated bounceInDown");
     };
 
 });
