@@ -42,6 +42,8 @@ def make_norms():
                 }
 
                 body {
+                    color: #333333;
+                    background-color: #FFFFFF;
                     font-size: 1.3em;
                     padding: 1em .75em 1em .75em;
     """)
@@ -84,11 +86,11 @@ def make_norms():
                 }
 
                 .red-quad {
-                    background-color: #FF4200;
+                    background-color: #847fd7;
                 }
 
                 .black-quad {
-                    background-color: #000000;
+                    background-color: #333333;
                 }
 
             </style>
