@@ -1,0 +1,9 @@
+re-write code so it actually makes sense
+
+use templates to generate HTML
+
+add JS toggling between: numerical / visual-analog / background
+
+write recipe in English, add some background to the TODO
+
+re-write using ClojureScript or Elm
