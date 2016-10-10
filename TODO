@@ -1,7 +1,5 @@
-refactor
-
 add JS toggling between: numerical / visual-analog / background
 
-write recipe in English, add some background to the TODO
+re-write in a functional style
 
-re-write using ClojureScript or Elm
+re-write in Elm
