@@ -10,8 +10,8 @@ x_axis_sizes = (
     36, 40, 42, 48, 54, 56, 60, 72, 84, 90, 96, 108, 120, 126, 144, 168
 )
 
-# normative sizes, and the ones we use for the y-axis
-normal_point_sizes = (5, 6, 7, 8, 9, 10, 12, 14, 18, 24, 30, 36, 42, 48, 60, 72)
+# the common (there is a better term) sizes, and the ones we use for the y-axis
+common_point_sizes = (5, 6, 7, 8, 9, 10, 12, 14, 18, 24, 30, 36, 42, 48, 60, 72)
 
 # point size for the final row
 y_axis_max = 42
@@ -24,7 +24,7 @@ def make_norms():
 
     # first pass to build the table of values
     matrix = []
-    for ptsize in [x for x in normal_point_sizes if x <= y_axis_max]:
+    for ptsize in [x for x in common_point_sizes if x <= y_axis_max]:
         row = []
         for c in x_axis_sizes:
             cell_value = None
@@ -43,13 +43,13 @@ def make_norms():
             if td:
                 column_pt_size = x_axis_sizes[td_idx]
                 multiple_use_size = (
-                    column_pt_size != normal_point_sizes[row_idx] and
-                    column_pt_size in normal_point_sizes
+                    column_pt_size != common_point_sizes[row_idx] and
+                    column_pt_size in common_point_sizes
                 )
                 cell = {
                     'multiple': multiple_use_size,
                     'width': column_pt_size,
-                    'height':  str(normal_point_sizes[row_idx])
+                    'height':  str(common_point_sizes[row_idx])
                 }
             cells.append(cell)
         output_rows.append(cells)
