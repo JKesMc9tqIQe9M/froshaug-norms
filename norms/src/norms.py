@@ -26,8 +26,7 @@ def make_norms():
     matrix = []
     for ptsize in [x for x in normal_point_sizes if x <= y_axis_max]:
         row = []
-        cols = [i for i in range(min(x_axis_sizes), max(x_axis_sizes) + 1) if i in x_axis_sizes]
-        for c in cols:
+        for c in x_axis_sizes:
             cell_value = None
             if len([i for i in row if i is not None]) < max_quad_size:
                 if ptsize == c or (c % ptsize == 0):
