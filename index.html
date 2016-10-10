@@ -1,1449 +1,1201 @@
+<!DOCTYPE html>
+<html>
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8"/>
-            <title>Typographic norms</title>
+    <head>
+        <meta charset="utf-8" />
+        <title>Typographic norms</title>
+        <link rel="stylesheet" href="css/animate.min.css">
+        <style type="text/css">
+            @font-face {
+                font-family: 'humanst521_btroman';
+                src: url('fonts/humanist_521_bt-webfont.eot');
+                src: url('fonts/humanist_521_bt-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/humanist_521_bt-webfont.woff2') format('woff2'), url('fonts/humanist_521_bt-webfont.woff') format('woff'), url('fonts/humanist_521_bt-webfont.ttf') format('truetype'), url('fonts/humanist_521_bt-webfont.svg#humanst521_btroman') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+            
+            @font-face {
+                font-family: 'humanst521_btbold';
+                src: url('fonts/humanist_521_bold_bt-webfont.eot');
+                src: url('fonts/humanist_521_bold_bt-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/humanist_521_bold_bt-webfont.woff2') format('woff2'), url('fonts/humanist_521_bold_bt-webfont.woff') format('woff'), url('fonts/humanist_521_bold_bt-webfont.ttf') format('truetype'), url('fonts/humanist_521_bold_bt-webfont.svg#humanst521_btbold') format('svg');
+                font-weight: 700;
+                font-style: normal;
+            }
+            
+            body {
+                color: #333333;
+                background-color: #FFFFFF;
+                font-size: 1.3em;
+                padding: 1em .75em 1em .75em;
+                font-family: humanst521_btroman, sans-serif;
+            }
+            
+            h1 {
+                font-family: humanst521_btbold, sans-serif;
+                font-size: 1em;
+                margin-bottom: 3em;
+                margin-top: 0;
+                padding-top: 0;
+            }
+            
+            h1.text-mode {
+                padding-left: 4.25em;
+            }
+            
+            td {
+                padding-right: .5em;
+                /* print(" padding-bottom: 1em;")  text mode */
+                padding-bottom: .7em;
+                width: 1px;
+                white-space: nowrap;
+            }
+            
+            td.pt-size {
+                text-align: right;
+                font-family: humanst521_btbold;
+                padding-right: 3em;
+            }
+            
+            .multiple-quad {
+                background-color: #847fd7;
+            }
+            
+            .regular-quad {
+                background-color: #333333;
+            }
+        </style>
+    </head>
 
-            <link rel="stylesheet" href="css/animate.min.css">
+    <body>
+        <h1> <!-- TODO class='text-mode' -->
+            Quadrats (CSS points)
+        </h1>
 
-            <style type="text/css">
+        <table>
+            <tr class='unpopulated'>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 5pt; height: 5pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 10pt; height: 5pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 15pt; height: 5pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 20pt; height: 5pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 6pt; height: 6pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 12pt; height: 6pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 18pt; height: 6pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 24pt; height: 6pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 7pt; height: 7pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 14pt; height: 7pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 21pt; height: 7pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 28pt; height: 7pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 8pt; height: 8pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 16pt; height: 8pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 24pt; height: 8pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 32pt; height: 8pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 9pt; height: 9pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 18pt; height: 9pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 27pt; height: 9pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 36pt; height: 9pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 10pt; height: 10pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 20pt; height: 10pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 30pt; height: 10pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 40pt; height: 10pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 12pt; height: 12pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 24pt; height: 12pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 36pt; height: 12pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 48pt; height: 12pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 14pt; height: 14pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 28pt; height: 14pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 42pt; height: 14pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 56pt; height: 14pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 18pt; height: 18pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 36pt; height: 18pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 54pt; height: 18pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 72pt; height: 18pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 24pt; height: 24pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 48pt; height: 24pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 72pt; height: 24pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 96pt; height: 24pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 30pt; height: 30pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 60pt; height: 30pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 90pt; height: 30pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 120pt; height: 30pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 36pt; height: 36pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad multiple-quad'
+                            style='display: none; width: 72pt; height: 36pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 108pt; height: 36pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 144pt; height: 36pt;'
+                        />
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class='unpopulated'>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 42pt; height: 42pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 84pt; height: 42pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 126pt; height: 42pt;'
+                        />
+                </td>
+                <td>
+                </td>
+                <td>
+                        <div
+                            class='quad regular-quad'
+                            style='display: none; width: 168pt; height: 42pt;'
+                        />
+                </td>
+            </tr>
+            </tr>
+        </table>
 
-                @font-face {
-                    font-family: 'humanst521_btroman';
-                    src: url('fonts/humanist_521_bt-webfont.eot');
-                    src: url('fonts/humanist_521_bt-webfont.eot?#iefix') format('embedded-opentype'),
-                         url('fonts/humanist_521_bt-webfont.woff2') format('woff2'),
-                         url('fonts/humanist_521_bt-webfont.woff') format('woff'),
-                         url('fonts/humanist_521_bt-webfont.ttf') format('truetype'),
-                         url('fonts/humanist_521_bt-webfont.svg#humanst521_btroman') format('svg');
-                    font-weight: normal;
-                    font-style: normal;
-                }
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/norms.js"></script>
+    </body>
 
-                @font-face {
-                    font-family: 'humanst521_btbold';
-                    src: url('fonts/humanist_521_bold_bt-webfont.eot');
-                    src: url('fonts/humanist_521_bold_bt-webfont.eot?#iefix') format('embedded-opentype'),
-                         url('fonts/humanist_521_bold_bt-webfont.woff2') format('woff2'),
-                         url('fonts/humanist_521_bold_bt-webfont.woff') format('woff'),
-                         url('fonts/humanist_521_bold_bt-webfont.ttf') format('truetype'),
-                         url('fonts/humanist_521_bold_bt-webfont.svg#humanst521_btbold') format('svg');
-                    font-weight: 700;
-                    font-style: normal;
-                }
+</html>
 
-                body {
-                    color: #333333;
-                    background-color: #FFFFFF;
-                    font-size: 1.3em;
-                    padding: 1em .75em 1em .75em;
-    
-font-family: "Times New Roman", Times, Georgia, serif;
-
-                }
-
-                h1 {
-                    font-family: humanst521_btbold, sans-serif;
-                    font-size: 1em;
-                    margin-bottom: 3em;
-                    margin-top: 0;
-                    padding-top: 0;
-                }
-
-                h1.text-mode {
-                    padding-left: 4.25em;
-                }
-
-                td {
-                    padding-right: .5em;
-    
- padding-bottom: .7em;
-
-                    width: 1px;
-                    white-space: nowrap;
-                }
-
-                td.pt-size {
-                    text-align: right;
-                    font-family: humanst521_btbold;
-                    padding-right: 3em;
-                }
-
-                .red-quad {
-                    background-color: #847fd7;
-                }
-
-                .black-quad {
-                    background-color: #333333;
-                }
-
-            </style>
-        </head>
-
-        <body>
-
-            <h1
-    
-
-    >Quadrats (CSS points)</h1>
-
-            <table>
-
-    
-<tr class='unpopulated'>
-<td>
-<div class='quad black-quad' style='display: none; width: 5pt; height: 5pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 10pt; height: 5pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 15pt; height: 5pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 20pt; height: 5pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 6pt; height: 6pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 12pt; height: 6pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 18pt; height: 6pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 24pt; height: 6pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 7pt; height: 7pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 14pt; height: 7pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 21pt; height: 7pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 28pt; height: 7pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 8pt; height: 8pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 16pt; height: 8pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 24pt; height: 8pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 32pt; height: 8pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 9pt; height: 9pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 18pt; height: 9pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 27pt; height: 9pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 36pt; height: 9pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 10pt; height: 10pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 20pt; height: 10pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 30pt; height: 10pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 40pt; height: 10pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 12pt; height: 12pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 24pt; height: 12pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 36pt; height: 12pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 48pt; height: 12pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 14pt; height: 14pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 28pt; height: 14pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 42pt; height: 14pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 56pt; height: 14pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 18pt; height: 18pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 36pt; height: 18pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 54pt; height: 18pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 72pt; height: 18pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 24pt; height: 24pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 48pt; height: 24pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 72pt; height: 24pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 96pt; height: 24pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 30pt; height: 30pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 60pt; height: 30pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 90pt; height: 30pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 120pt; height: 30pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 36pt; height: 36pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad red-quad' style='display: none; width: 72pt; height: 36pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 108pt; height: 36pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 144pt; height: 36pt;'/>
-</td>
-<td>
- 
-</td>
-</tr>
-<tr class='unpopulated'>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 42pt; height: 42pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 84pt; height: 42pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 126pt; height: 42pt;'/>
-</td>
-<td>
- 
-</td>
-<td>
-<div class='quad black-quad' style='display: none; width: 168pt; height: 42pt;'/>
-</td>
-</tr>
-</table>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="js/norms.js"></script>
-</body></html>
