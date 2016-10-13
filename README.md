@@ -1,7 +1,7 @@
 # froshaug-norms
 Kinross describes the &#8216;visual tables&#8217; of Anthony Froshaug&#8217;s
 _Typographic norms_ as &#8216;beautiful constellations; mysterious reports on typography&#8217;.
-Having appreciated that beauty for a long time, we also wanted to lessen the mystery
+Having appreciated that beauty for a long time, we wanted to lessen the mystery
 a bit to understand better what was happening under the hood. So this is a modest
 attempt at doing that by writing a computer program to render one of the
 iterations
@@ -16,7 +16,7 @@ and CSS/browser points.)
 The recipe for generating the data that, in turn, yields the output we want,
 is as follows:
 
-* the x-axis (unlabeld, even in the numerical rendition, since the labeling
+* the x-axis (unlabeled, even in the numerical rendition, since the labeling
 there would be redundant) ranges across what appears to be a complete set of
 known standard sizes, starting at 5 and going up to 168
 
