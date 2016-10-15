@@ -27,7 +27,7 @@ here -- the most commonly-used sizes: 5, 6, 7, 8, 9, 10, 12, 14, 18, 24, 30, 36,
 quads wouldn&#8217;t be available at those large sizes; other types of furniture
 might instead have been used at that point, we guess).
 
-* iterating over the y-axis sizes, from 5 to 42, we constructs rows containing
+* iterating over the y-axis sizes, from 5 to 42, we construct rows containing
 cells. Each row will have exactly four quads in it, probably because there
 would be four types of quads available: (1-)quads, 2-quads, 3-quads, 4-quads.
 
